@@ -8,11 +8,11 @@ const siswa = [
 ];
 
 // 1. Tambahkan nilai bonus 5 untuk yang nilainya < 70
-for (let i = 0; i < siswa.length; i++) {
-  if (siswa[i].nilai < 70) {
-    siswa[i].nilai += 5;
+siswa.forEach(bonus => {
+  if (bonus.nilai < 70) {
+    bonus.nilai += 5;
   }
-}
+})
 
 // 2. Urutkan descending tanpa sort()
 for (let i = 0; i < siswa.length - 1; i++) {
